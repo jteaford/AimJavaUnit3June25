@@ -24,7 +24,6 @@ public class MyPoint {
 
     // A no-arg constructor that creates a default point at (0,0).
     public MyPoint() {
-        MyPoint p1 = new MyPoint();
         x = 0;
         y = 0;
         }
