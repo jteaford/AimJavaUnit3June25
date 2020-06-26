@@ -41,6 +41,13 @@ public class ArrayListExercise {
             System.out.println(i.next());
         }
 
+        while(iterate.hasNext()){
+            System.out.print(iterate.next());
+            System.out.print(", ");
+            }
+            
+            System.out.println("");
+
         // Remove your first List of Strings from your combined List.
         allAnimals.removeAll(animals);
         System.out.println("Cats Array List: " + allAnimals);
