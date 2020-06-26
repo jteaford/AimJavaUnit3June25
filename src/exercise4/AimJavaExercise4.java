@@ -8,6 +8,7 @@ public class AimJavaExercise4 {
         System.out.println("This program creates a point at (0,0) and a point at the coordinates entered by you. It then computes and displays the distance from (0,0) to the point defined by you, using three different methods.");
 
         // Uses the no-arg constructor to create a MyPoint object p1 at (0,0).
+        MyPoint p1 = new MyPoint(0,0);
 
         // Prompts the user to enter the x and y coordinates of a point.
 
@@ -20,7 +21,7 @@ public class AimJavaExercise4 {
         input.close();
 
         // Uses the first distance method to calculate and display the distance between the MyPoint object p1 and the point at the x and y coordinates entered by the user. The distance is displayed with two digits after the decimal point.
-        System.out.println("Using method 1, the distance from " + p1 + " to " + (x2, y2) + " is " distance(int xCoord, int yCoord));
+        System.out.println("Using method 1, the distance from " + p1 + " to " + input + " is " distance());
 
         // Uses the parameterized constructor to create a MyPoint object p2 using the x coordinate and y coodinate entered by the user.
         MyPoint p2 = new MyPoint(x2, y2);
