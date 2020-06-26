@@ -35,13 +35,19 @@ public class ArrayListExercise {
 
         // Iterate through your combined List of Strings and print each element
         Iterator<String> iterate = allAnimals.iterator();
-        System.out.println("All Animals Array List: ");
+        System.out.println("All Animals Array List: " + allAnimals);
+
+        for(Iterator<String> i = allAnimals.iterator(); i.hasNext();) {
+            System.out.println(i.next());
+        }
 
         // Remove your first List of Strings from your combined List.
-        String str = allAnimals.remove(0);
-        System.out.println("Cats Array List: ");
+        allAnimals.removeAll(animals);
+        System.out.println("Cats Array List: " + allAnimals);
 
         // Clear all your Lists of Strings
-        allAnimals.removeAll(allAnimals);
+        animals.clear();
+        cats.clear();
+        allAnimals.clear();
     }
 }
