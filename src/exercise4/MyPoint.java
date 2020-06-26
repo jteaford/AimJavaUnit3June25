@@ -31,7 +31,8 @@ public class MyPoint {
 
     // A parameterized constructor that creates a point at the designated x and y coordinate.
     public MyPoint(int x, int y) {
-    
+    int x = x1;
+    int y = y1;
     }
 
     // A member method named distance that calculates and returns the distance between this MyPoint object and another point that is specified by its x- and y-coordinates. The method header looks like this: public double distance(int xCoord, int yCoord);

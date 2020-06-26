@@ -10,9 +10,6 @@ public class AimJavaExercise4 {
         // Uses the no-arg constructor to create a MyPoint object p1 at (0,0).
 
         // Prompts the user to enter the x and y coordinates of a point.
-        
-        
-        
 
         // Saves the users input.
         Scanner input = new Scanner(System.in);
