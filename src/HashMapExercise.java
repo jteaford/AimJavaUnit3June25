@@ -1,30 +1,39 @@
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class HashMapExercise {
     public static void main(String[] args) {
         // Create a HashMap of 5 colors and their hex values
-        Map<String, Integer> colors = new HashMap<>();
-        colors.put("Red", 1);
-        colors.put("Orange", 2);
-        colors.put("Yellow", 3);
-        colors.put("Green", 4);
-        colors.put("Blue", 5);
+        Map<String, String> colors = new HashMap<>();
+        colors.put("Red", "FF0000");
+        colors.put("Orange", "FFA500");
+        colors.put("Yellow", "#FFFF00");
+        colors.put("Green", "#008000");
+        colors.put("Blue", "#0000FF");
 
         // Loop through and print each key and value of the map
-        
+        Iterator iter = colors.entrySet().iterator();
+        while(iter.hasNext()) {
+            Map.Entry element = (Map.Entry) iter.next();
+            System.out.println("Key" + element.getKey() + ", Value: " + element.getValue());
+        }
 
         // Check to see if one of the colors exist in the map
-        colors.containsKey("Blue");
-        System.out.println("Does map contain blue? : " +colors.containsKey("Blue"));
+        boolean containsBlue = colors.containsKey("Blue");
+        System.out.println("Does map contain blue? : " + containsBlue);
 
         // Remove that color from the Map
-        int value = colors.remove("Blue");
-        System.out.println("Removed value: " + value);
+        String removeColor = colors.remove("Blue");
+        System.out.println(removeColor + " was removed");
+
+        if (containsBlue == false) {
+        System.out.println("Color is in map.");
+        } else {
+            System.out.println("Color is not in map.");
+        }
 
         // Write a condition to check for the existence of that color again in the Map
-        colors.containsKey("Blue");
-        System.out.println("Is blue still there? : " + colors.containsKey("Blue"));
 
         // Print out something for each condition
 
