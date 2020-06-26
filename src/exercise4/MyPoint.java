@@ -36,9 +36,10 @@ public class MyPoint {
 
     // A member method named distance that calculates and returns the distance between this MyPoint object and another point that is specified by its x- and y-coordinates. The method header looks like this: public double distance(int xCoord, int yCoord);
         public double distance(int xCoord, int yCoord){
-            MyPoint mp1 = new MyPoint();
-            MyPoint mp2 = new MyPoint();
-            MyPoint.distance(mp1, mp2);
+            this.getX();
+            this.getY();
+            MyPoint mp2 = new MyPoint(xCoord, yCoord);
+            MyPoint.distance(this.getX(), this.getY(), mp2.getX(), mp2.getY());
         }
 
     // A member method named distance that calculates and returns the distance between this MyPoint object and another object of the MyPoint class. The method header looks like this: public double distance(MyPoint p)
